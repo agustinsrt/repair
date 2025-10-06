@@ -1,0 +1,13 @@
+WSGIScriptAlias / /www.Claimsctr.somee.com/app.wsgi
+
+<Directory /www.Claimsctr.somee.com>
+    Require all granted
+    Order allow,deny
+    Allow from all
+</Directory>
+
+Options +ExecCGI
+Options +ExecCGI
+AddHandler cgi-script .cgi
+AddHandler cgi-script .py
+AddHandler wsgi-script .wsgi
